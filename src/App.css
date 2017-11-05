@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.infograph {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background: navy url('dtmxbg.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  line-height: 14px;
+  padding: 25px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.marker:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  margin-top: -37.5px;
+  margin-left: -37.5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #fb1;
+  transition: opacity 0.2s;
+
+}
+.marker:hover:after {
+  opacity: 0.5;
+}
+
+.marker__title {
+  position: absolute;
+  z-index: 2;
+  max-width: 75px;
+}
